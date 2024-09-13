@@ -4,6 +4,7 @@ from .models import UserProfile, Post, Like, Comment
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'bio', 'profile_pic')
+    filter_horizontal = ('following',)
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):

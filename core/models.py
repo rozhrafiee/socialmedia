@@ -39,3 +39,5 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.user.username} on {self.post.id}: {self.text}"
+    
+#ye kelaase joda baraye following dorost kon    
